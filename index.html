@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Firdo Radjaku</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- font awesome -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <style>
+        h1 {
+            font-family: "Anton", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar bg-base-100">
+        <div class="navbar-start">
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h16M4 18h7" />
+              </svg>
+            </div>
+            <ul
+              tabindex="0"
+              class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+              <li><a>Homepage</a></li>
+              <li><a>Portfolio</a></li>
+              <li><a>About</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="navbar-center">
+          <a class="btn btn-ghost text-xl font-bold">My Portfolio</a>
+        </div>
+        <div class="navbar-end">
+          <button class="btn btn-ghost btn-circle">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-5 w-5"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+            </svg>
+          </button>
+          <input type="checkbox" value="retro" class="toggle theme-controller" />
+        </div>
+    </div>
+    <div class="container mx-auto mt-5">
+        <div class="mockup-window bg-base-300 border">
+            <div class="bg-base-200 flex justify-center px-4 py-16">
+                <div class="flex content-center gap-10">
+                    <div>
+                        <figure class="relative max-w-sm transition-all duration-300 cursor-pointer filter grayscale hover:grayscale-0">
+                            <a href="#">
+                              <img class="rounded-lg" src="image/WhatsApp Image 2024-07-16 at 17.35.30_4481f108.jpg" alt="image description">
+                            </a>
+                           
+                        </figure>
+                    </div>
+                    <div class="flex flex-col text-start space-y-5">
+                        <h4 class="font-bold text-3xl">Hello!👋🎥</h4>
+                        <h1 class="font-bold text-5xl"> I'm Muhammad Rohwandi Zenka Firdaus </h1>
+                        <div class="badge badge-accent"><h4>Video Editor & Videomaker 🎥</h4></div>
+                        <p class="text-lg">Editing video adalah seni visual yang mirip dengan kehidupan. <br>merangkai, menyusun dan menyunting gambar, agar bisa selaras dengan keadaan.</p>
+                        <hr>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="h-screen">
+        <div class="container mx-auto mt-5">
+            <h1 class="font-bold text-5xl mb-5"> - Galeri</h1>
+            <div class="grid grid-cols-3 gap-3">
+                <div class="card border border-4 rounded-lg shadow-lg">
+                    <img
+                      src="image/WhatsApp Image 2024-07-16 at 17.35.27_ffd35529.jpg"
+                      alt="Shoes" class="h-full w-full " />
+                </div>
+                <div class="card border border-4 rounded-lg">
+                    <img
+                      src="image/WhatsApp Image 2024-07-16 at 17.35.29_75bf22b4.jpg"
+                      class="h-full w-full "
+                      alt="Shoes" />
+                </div>
+                <div class="card border border-4 rounded-lg">
+                    <img
+                      src="image/WhatsApp Image 2024-07-16 at 17.35.29_c556a5f7.jpg"
+                      alt="Shoes" />
+                </div>
+    
+    
+            </div>
+        </div>
+    </div>
+    <div class="chat chat-start">
+        <div class="chat-image avatar">
+          <div class="w-10 rounded-full">
+            <img
+              alt="Tailwind CSS chat bubble component"
+              src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg" />
+          </div>
+        </div>
+        <div class="chat-bubble">It was said that you would, destroy the Sith, not join them.</div>
+    </div>
+</body>
+</html>
