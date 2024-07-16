@@ -10,11 +10,26 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <!-- video -->
+    <link rel="stylesheet" href="https://cdn.plyr.io/3.7.8/plyr.css" />
     <style>
-        h1 {
+        h1, .tab-header {
             font-family: "Anton", sans-serif;
             font-weight: 400;
             font-style: normal;
+        }
+        .cursor {
+            display: inline-block;
+            animation: blink 0.7s infinite;
+        }
+        
+        @keyframes blink {
+            0%, 50% {
+                opacity: 1;
+            }
+            50.01%, 100% {
+                opacity: 0;
+            }
         }
     </style>
 </head>
@@ -48,21 +63,8 @@
         <div class="navbar-center">
           <a class="btn btn-ghost text-xl font-bold">My Portfolio</a>
         </div>
-        <div class="navbar-end">
-          <button class="btn btn-ghost btn-circle">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              class="h-5 w-5"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor">
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-            </svg>
-          </button>
+        <div class="navbar-end gap-3">
+          <a href="image/CV M. Rohwandi Zenka F.pdf" download="video_editor_firdo.pdf" class="btn btn-error btn-sm">Download CV</a>
           <input type="checkbox" value="retro" class="toggle theme-controller" />
         </div>
     </div>
@@ -80,49 +82,182 @@
                     </div>
                     <div class="flex flex-col text-start space-y-5">
                         <h4 class="font-bold text-3xl">Hello!👋🎥</h4>
-                        <h1 class="font-bold text-5xl"> I'm Muhammad Rohwandi Zenka Firdaus </h1>
-                        <div class="badge badge-accent"><h4>Video Editor & Videomaker 🎥</h4></div>
+                        <h1 class="font-bold text-5xl">
+                            <span id="animated-text"></span>
+                            <span class="cursor">|</span>
+                        </h1>
+                        <div class="badge badge-accent text-md font-bold p-3"><h4>Video Editor, Videomaker & Musician 🎥</h4></div>
                         <p class="text-lg">Editing video adalah seni visual yang mirip dengan kehidupan. <br>merangkai, menyusun dan menyunting gambar, agar bisa selaras dengan keadaan.</p>
                         <hr>
+                        <div class="join">
+                            <a href="https://youtube.com/@firdoradjaku?si=oUa4orl66M-pqpSv" class="btn join-item btn-outline btn-error">Youtube</a>
+                            <a href="https://youtube.com/playlist?list=PLYuPwOLQ6S7JNGns5bHdXrZXcdJu67EKr&si=VLnndHdr7JobLhlf" class="btn join-item btn-outline btn-primary">Short Movie</a>
+                            <a href="https://drive.google.com/drive/folders/1lXZMxBBYymKad7MJeQ-cljL3chdJvYNV" class="btn join-item btn-outline btn-primary">GDrive Portofolio</a>
+                            <a href="https://www.linkedin.com/in/muhammad-rohwandi-zenka-firdaus-947021299?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="btn join-item btn-outline btn-info">Linkedin</a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <div class="h-screen">
-        <div class="container mx-auto mt-5">
-            <h1 class="font-bold text-5xl mb-5"> - Galeri</h1>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-3">
-                <div class="card border border-4 rounded-lg shadow-lg">
-                    <img
-                      src="image/WhatsApp Image 2024-07-16 at 17.35.27_ffd35529.jpg"
-                      alt="Shoes" class="h-full w-full " />
+    <div class="h-full">
+        <div class="container mx-auto mt-5 mb-5">
+            <div role="tablist" class="tabs tabs-lifted ">
+                <input type="radio" name="my_tabs_2" role="tab" class="tab font-bold text-lg tab-header" aria-label="GALERI" />
+                <div role="tabpanel" class="tab-content bg-base-100 border-base-300 rounded-box p-6">
+                    <div>
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-3">
+                            <div class="card border border-4 rounded-lg shadow-lg">
+                                <img
+                                  src="image/WhatsApp Image 2024-07-16 at 17.35.27_ffd35529.jpg"
+                                  alt="Shoes" class="h-full w-full " />
+                            </div>
+                            <div class="card border border-4 rounded-lg">
+                                <img
+                                  src="image/WhatsApp Image 2024-07-16 at 17.35.29_75bf22b4.jpg"
+                                  class="h-full w-full "
+                                  alt="Shoes" />
+                            </div>
+                            <div class="card border border-4 rounded-lg">
+                                <img
+                                  src="image/WhatsApp Image 2024-07-16 at 17.35.29_c556a5f7.jpg"
+                                  alt="Shoes" />
+                            </div>
+                            <div class="card border border-4 rounded-lg">
+                                <img
+                                  src="image/WhatsApp Image 2024-07-16 at 19.04.21_9af1c1ee.jpg"
+                                  alt="Shoes" />
+                            </div>
+                            <div class="card border border-4 rounded-lg">
+                                <img
+                                  src="image/WhatsApp Image 2024-07-16 at 19.06.52_225c433d.jpg"
+                                  class="h-full w-full "
+                                  alt="Shoes" />
+                            </div>
+                            <div class="card border border-4 rounded-lg">
+                                <img
+                                  src="image/WhatsApp Image 2024-07-16 at 19.10.01_4e644b65.jpg"
+                                  class="h-full w-full "
+                                  alt="Shoes" />
+                            </div>
+                
+                
+                        </div>
+                    </div>
                 </div>
-                <div class="card border border-4 rounded-lg">
-                    <img
-                      src="image/WhatsApp Image 2024-07-16 at 17.35.29_75bf22b4.jpg"
-                      class="h-full w-full "
-                      alt="Shoes" />
+              
+                <input
+                  type="radio"
+                  name="my_tabs_2"
+                  role="tab"
+                  class="tab font-bold text-lg tab-header"
+                  aria-label="VIDEO"
+                  checked="checked" />
+                <div role="tabpanel" class="tab-content bg-base-100 border-base-300 rounded-box p-6">
+                    <div class="container mx-auto mt-5">
+                        <video id="player" playsinline controls data-poster="/path/to/poster.jpg">
+                            <source src="finish.mp4" type="video/mp4" />
+                            <source src="/path/to/video.webm" type="video/webm" />
+                          
+                            <!-- Captions are optional -->
+                            <track kind="captions" label="English captions" src="/path/to/captions.vtt" srclang="en" default />
+                        </video>
+                    </div>
                 </div>
-                <div class="card border border-4 rounded-lg">
-                    <img
-                      src="image/WhatsApp Image 2024-07-16 at 17.35.29_c556a5f7.jpg"
-                      alt="Shoes" />
-                </div>
-    
-    
+              
             </div>
+           
+         
         </div>
+       
     </div>
-    <div class="chat chat-start">
-        <div class="chat-image avatar">
-          <div class="w-10 rounded-full">
-            <img
-              alt="Tailwind CSS chat bubble component"
-              src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg" />
+    <footer class="footer bg-neutral text-neutral-content p-10">
+        <aside>
+          <svg
+            width="50"
+            height="50"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            class="fill-current">
+            <path
+              d="M22.672 15.226l-2.432.811.841 2.515c.33 1.019-.209 2.127-1.23 2.456-1.15.325-2.148-.321-2.463-1.226l-.84-2.518-5.013 1.677.84 2.517c.391 1.203-.434 2.542-1.831 2.542-.88 0-1.601-.564-1.86-1.314l-.842-2.516-2.431.809c-1.135.328-2.145-.317-2.463-1.229-.329-1.018.211-2.127 1.231-2.456l2.432-.809-1.621-4.823-2.432.808c-1.355.384-2.558-.59-2.558-1.839 0-.817.509-1.582 1.327-1.846l2.433-.809-.842-2.515c-.33-1.02.211-2.129 1.232-2.458 1.02-.329 2.13.209 2.461 1.229l.842 2.515 5.011-1.677-.839-2.517c-.403-1.238.484-2.553 1.843-2.553.819 0 1.585.509 1.85 1.326l.841 2.517 2.431-.81c1.02-.33 2.131.211 2.461 1.229.332 1.018-.21 2.126-1.23 2.456l-2.433.809 1.622 4.823 2.433-.809c1.242-.401 2.557.484 2.557 1.838 0 .819-.51 1.583-1.328 1.847m-8.992-6.428l-5.01 1.675 1.619 4.828 5.011-1.674-1.62-4.829z"></path>
+          </svg>
+          <p>
+            Firdo Radjaku.
+            <br />
+            Copyright © 2022 - All right reserved
+          </p>
+        </aside>
+        <nav>
+          <h6 class="footer-title">Social Media</h6>
+          <div class="grid grid-flow-col gap-4">
+            <a href="https://www.instagram.com/firdo_radjaku?igsh=MWdvb2FpbXdtZmNweg%3D%3D&utm_source=qr" class="flex items-center">
+                <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                    <path fill="currentColor" fill-rule="evenodd" d="M3 8a5 5 0 0 1 5-5h8a5 5 0 0 1 5 5v8a5 5 0 0 1-5 5H8a5 5 0 0 1-5-5V8Zm5-3a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3h8a3 3 0 0 0 3-3V8a3 3 0 0 0-3-3H8Zm7.597 2.214a1 1 0 0 1 1-1h.01a1 1 0 1 1 0 2h-.01a1 1 0 0 1-1-1ZM12 9a3 3 0 1 0 0 6 3 3 0 0 0 0-6Zm-5 3a5 5 0 1 1 10 0 5 5 0 0 1-10 0Z" clip-rule="evenodd"/>
+                </svg>
+                Instagram
+            </a>
+            <a href="https://www.facebook.com/firdoradjaku.probolinggo?mibextid=JRoKGi" class="flex items-center">
+                <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                    <path fill-rule="evenodd" d="M13.135 6H15V3h-1.865a4.147 4.147 0 0 0-4.142 4.142V9H7v3h2v9.938h3V12h2.021l.592-3H12V6.591A.6.6 0 0 1 12.592 6h.543Z" clip-rule="evenodd"/>
+                </svg>
+                Facebook
+                  
+            </a>
+           
           </div>
-        </div>
-        <div class="chat-bubble">It was said that you would, destroy the Sith, not join them.</div>
-    </div>
+        </nav>
+    </footer>
+    <footer class="footer bg-accent-content p-2">
+        <hr>
+        <p class="text-center text-xs flex">Developed By <a href="https://rifjan29.github.io/profile-me/" class="text-white">Rifjan Jundila</a></p>
+    </footer>
+    
 </body>
+<script src="https://cdn.plyr.io/3.7.8/plyr.polyfilled.js"></script>
+<script>
+    const textElement = document.getElementById('animated-text');
+    const texts = [
+        "I'm Muhammad Rohwandi Zenka Firdaus",
+        "I'm a Video Editor",
+        "I'm a Videomaker ",
+        "I'm a Musician"
+    ];
+    let textIndex = 0;
+    let charIndex = 0;
+    let isDeleting = false;
+    const typingSpeed = 50;
+    const deletingSpeed = 50;
+    const pauseTime = 2000;
+
+    function type() {
+        const currentText = texts[textIndex];
+        if (isDeleting) {
+            textElement.textContent = currentText.substring(0, charIndex - 1);
+            charIndex--;
+        } else {
+            textElement.textContent = currentText.substring(0, charIndex + 1);
+            charIndex++;
+        }
+
+        if (!isDeleting && charIndex === currentText.length) {
+            setTimeout(() => {
+                isDeleting = true;
+            }, pauseTime);
+        } else if (isDeleting && charIndex === 0) {
+            isDeleting = false;
+            textIndex = (textIndex + 1) % texts.length;
+        }
+
+        setTimeout(type, isDeleting ? deletingSpeed : typingSpeed);
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+        type();
+    });
+
+    const player = new Plyr('#player');
+  </script>
 </html>
