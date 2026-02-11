@@ -21,12 +21,12 @@ const About: React.FC = () => {
           {/* Text Content */}
           <div>
             <h2 className="text-4xl md:text-5xl font-display font-bold text-white mb-6">
-              About <span className="text-accent-blue">Me</span>
+              About <span className="text-accent-gold">Me</span>
             </h2>
             <p className="text-text-muted text-lg leading-relaxed mb-6">
               Akrab dikenal sebagai <strong className="text-white">Firdo Radja</strong>, saya adalah seorang Seniman Visual dan Musisi. 
               Dengan latar belakang di dunia pertelevisian dan produksi konten digital, saya telah bekerja di balik layar untuk brand F&B ternama seperti 
-              <span className="text-accent-blue"> Ayam Goreng Nelongso</span>, <span className="text-accent-blue">Chick N Bliss</span>, dan <span className="text-accent-blue">Geprek Kak Rose</span>.
+              <span className="text-accent-gold"> Ayam Goreng Nelongso</span>, <span className="text-accent-gold">Chick N Bliss</span>, dan <span className="text-accent-gold">Geprek Kak Rose</span>.
             </p>
             <p className="text-text-muted text-lg leading-relaxed mb-8">
               Saat ini, saya berperan sebagai creative brain untuk konten <span className="text-white font-semibold">Warung Taburai by Praz Teguh</span>. 
@@ -40,7 +40,7 @@ const About: React.FC = () => {
                 <p className="text-sm text-text-muted uppercase tracking-wider">Experience</p>
               </div>
               <div className="p-4 border border-secondary bg-secondary/20 rounded-lg">
-                <h3 className="text-2xl font-bold text-accent-blue mb-1">100+</h3>
+                <h3 className="text-2xl font-bold text-accent-gold mb-1">100+</h3>
                 <p className="text-sm text-text-muted uppercase tracking-wider">Projects</p>
               </div>
             </div>
@@ -50,15 +50,15 @@ const About: React.FC = () => {
           <div className="relative">
              <div className="aspect-[3/4] rounded-lg overflow-hidden bg-secondary relative group">
                 {/* Replace with actual image later */}
-                <div className="absolute inset-0 bg-gradient-to-tr from-accent-red/20 to-accent-blue/20 mix-blend-overlay"></div>
+                <div className="absolute inset-0 bg-gradient-to-tr from-accent-red/20 to-accent-gold/20 mix-blend-overlay"></div>
                 <img 
-                  src="https://placehold.co/600x800/1a1a1a/FFF?text=Firdo+Radja" 
+                  src="/assets/WhatsApp Image 2026-02-11 at 07.50.49.jpeg" 
                   alt="Firdo Radja" 
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                 />
              </div>
              {/* Decorative Elements */}
-             <div className="absolute -bottom-6 -right-6 w-24 h-24 border-2 border-accent-blue/30 rounded-full"></div>
+             <div className="absolute -bottom-6 -right-6 w-24 h-24 border-2 border-accent-gold/30 rounded-full"></div>
              <div className="absolute -top-6 -left-6 w-32 h-32 border border-accent-red/30 rounded-full"></div>
           </div>
         </motion.div>
